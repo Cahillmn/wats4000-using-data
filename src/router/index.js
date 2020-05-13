@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Rhymesaurus from '@/views/Rhymesaurus'
-// TODO: Import new component
+import Adjectives from '@/components/Adjectives'
 
 Vue.use(VueRouter)
 
@@ -10,8 +10,14 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Rhymesaurus',
     component: Rhymesaurus
+  },
+  
+  { path: '/Adjectives',
+    name: 'Adjectives',
+    component: Adjectives
+
+
   }
-  // TODO: Add new route definition here
 ]
 
 const router = new VueRouter({
